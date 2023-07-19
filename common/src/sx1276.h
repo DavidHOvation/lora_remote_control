@@ -381,7 +381,9 @@ sx1276_cr_t sx1276_get_coding_rate(void);
 
 
 /**
- * Sets the symbol timeout (in symbols)
+ * Sets the symbol timeout
+ * @note Valid range for Value is 0 to 1023 symbols
+ * @note Default value is 100
  *
  * @param Value The value to set
  */
@@ -397,7 +399,8 @@ uint16_t sx1276_get_symbol_timeout(void);
 
 
 /**
- * Sets the preamble length (in symbols)
+ * Sets the preamble length
+ * @note Valid range for Value is 0 to 65535 symbols
  * @note The actual preamble length is Value + 4.25
  *
  * @param Value The value to set
@@ -415,7 +418,7 @@ uint16_t sx1276_get_preamble_length(void);
 
 /**
  * Sets the synchronisation word
- * @note LoRaWAN is 0x34; Lora recommends 0x14 for user applications
+ * @note Value for LoRaWAN is 0x34; LoRa recommends 0x14 for user applications
  *
  * @param Value The value to set
  */
