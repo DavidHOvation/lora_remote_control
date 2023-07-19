@@ -214,7 +214,7 @@ extern "C" {
 #define BOARD_PWR_ON_ACTIVE                 BOARD_PIN_LOW
 
 #define BOARD_PWROFF_PIN                    IOEXPANDER_IO1_5
-#define BOARD_PWROFF_ACTIVE                 BOARD_PIN_LOW
+#define BOARD_PWROFF_ACTIVE                 BOARD_PIN_HIGH
 
 #define BOARD_CHARGING_PIN                  IOEXPANDER_IO1_6
 #define BOARD_CHARGING_ACTIVE               BOARD_PIN_LOW
